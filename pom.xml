@@ -9,5 +9,9 @@
   <modules>  
     <module>android_maven</module>  
     <module>maventest</module>  
+	<module>util</module>  
   </modules>  
+
+
+  
 </project>  
