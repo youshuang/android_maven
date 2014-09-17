@@ -28,6 +28,14 @@
   <artifactId>gson</artifactId>
   <version>2.2.4</version>
 </dependency>
+
+<dependency>
+			<groupId>cn.gyyx.common</groupId>
+			<artifactId>util</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+
 	</dependencies>
 	<build>
 		<finalName>${project.artifactId}</finalName>

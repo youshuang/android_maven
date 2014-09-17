@@ -1,9 +1,11 @@
 package cn.gyyx.android.maventest;
 
+import cn.gyyx.common.util.MathUtil;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
+import android.widget.TextView;
 
 public class HelloAndroidActivity extends Activity {
 
@@ -17,6 +19,12 @@ public class HelloAndroidActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        MathUtil mathUtil = new MathUtil();
+        int sum = mathUtil.getSum(3, 3);
+        System.out.println(sum);
+        
+        TextView tv = (TextView) findViewById(R.id.tv_sum);
+        tv.setText("the sum is :"+sum);
     }
 
     @Override
