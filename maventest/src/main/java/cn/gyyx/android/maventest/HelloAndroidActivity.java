@@ -23,8 +23,10 @@ public class HelloAndroidActivity extends Activity {
         int sum = mathUtil.getSum(3, 3);
         System.out.println(sum);
         
+        
+        String s = mathUtil.connectStr("the sum", "is :") ;
         TextView tv = (TextView) findViewById(R.id.tv_sum);
-        tv.setText("the sum is :"+sum);
+        tv.setText(s+sum);
     }
 
     @Override
