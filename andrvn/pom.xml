@@ -2,11 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>cn.gyyx.android</groupId>
-	<artifactId>maventest</artifactId>
+	<groupId>cn.gyyx.andrvn</groupId>
+	<artifactId>andrvn</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>apk</packaging>
-	<name>maventest</name>
+	<name>andrvn</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -23,21 +23,10 @@
 			<scope>provided</scope>
 		</dependency>
 		
-			<dependency>
-  <groupId>com.google.code.gson</groupId>
-  <artifactId>gson</artifactId>
-  <version>2.2.4</version>
-</dependency>
-
-<dependency>
+		
+		<dependency>
 			<groupId>cn.gyyx.common</groupId>
 			<artifactId>util</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-
-<dependency>
-			<groupId>cn.gyyx.util2</groupId>
-			<artifactId>util2</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
@@ -75,7 +64,9 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore></ignore>
+										<execute >
+             <runOnIncremental>false</runOnIncremental>
+           </execute >
 									</action>
 								</pluginExecution>
 							</pluginExecutions>
