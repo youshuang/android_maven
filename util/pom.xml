@@ -75,7 +75,6 @@
 				<artifactId>android-maven-plugin</artifactId>
 				<configuration>
 					<sdk>
-										<path>/home/guohai/android_sdk/sdk</path>
 
 						<platform>16</platform>
 					</sdk>
